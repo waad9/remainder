@@ -20,7 +20,7 @@ struct TabBar: View {
                 Text("home2")
             }
             QickTimerSummary().tabItem{Image(systemName: "house")
-                Text("home3")
+                Text("home33")
             }
         }
         //----------------------------------------
