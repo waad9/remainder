@@ -25,6 +25,7 @@ struct QuickTimer: View {
         NavigationView{
         VStack{
            
+           
             VStack{
             HStack{
             Text("Enter Working Hours").font(.title2)
@@ -126,15 +127,29 @@ struct QuickTimer: View {
              */
             
         //--------Button---------------
-       Button("Set") {
-            //print("Button tapped!")
-        }.font(.title3).padding()
-                //.frame()
-            .foregroundColor(.white)
-            .background(Color(red: 0.958, green: 0.441, blue: 0.351))
-            .cornerRadius(15)
-            .padding()
+//       Button("Set") {
+//            //print("Button tapped!")
+//        }.font(.title3).padding()
+//                //.frame()
+//            .foregroundColor(.white)
+//            .background(Color(red: 0.958, green: 0.441, blue: 0.351))
+//            .cornerRadius(15)
+//            .padding()
             
+            //--------------------------------
+
+                       //Text("Navigation Link Below:")
+                       NavigationLink(destination: QickTimerSummary()) {
+                          Text("Set").font(.title3).padding()
+                           //.frame()
+                       .foregroundColor(.white)
+                       .background(Color(red: 0.958, green: 0.441, blue: 0.351))
+                       .cornerRadius(15)
+                       .padding()
+                       }
+            
+            // Button("Set"){}
+            //--------------------------------
         //button
         }//v2
         .navigationTitle(" Quick Timer")
@@ -142,12 +157,13 @@ struct QuickTimer: View {
         .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
                 .resizable(resizingMode: .tile)
             .foregroundColor(Color("Color")) })
+        }// NavigationView {
         }
         //nav
 
 
     }
-}
+
 
 struct QuickTimer_Previews: PreviewProvider {
     static var previews: some View {
