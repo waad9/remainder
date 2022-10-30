@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ACA6769290EFE210057F5AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA6768290EFE210057F5AB /* ContentView.swift */; };
 		C1789800290E5E7D00B62348 /* mine_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17897FF290E5E7D00B62348 /* mine_ProjectApp.swift */; };
 		C1789804290E5E7D00B62348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1789803290E5E7D00B62348 /* Assets.xcassets */; };
 		C1789807290E5E7D00B62348 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1789806290E5E7D00B62348 /* Preview Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4ACA6768290EFE210057F5AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C17897FC290E5E7D00B62348 /* mine Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mine Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17897FF290E5E7D00B62348 /* mine_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mine_ProjectApp.swift; sourceTree = "<group>"; };
 		C1789803290E5E7D00B62348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 		C17897F3290E5E7D00B62348 = {
 			isa = PBXGroup;
 			children = (
+				4ACA6768290EFE210057F5AB /* ContentView.swift */,
 				C17897FE290E5E7D00B62348 /* mine Project */,
 				C17897FD290E5E7D00B62348 /* Products */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C178980E290E5F3C00B62348 /* QuickTimer.swift in Sources */,
+				4ACA6769290EFE210057F5AB /* ContentView.swift in Sources */,
 				C1789810290E605C00B62348 /* QickTimerSummary.swift in Sources */,
 				C1789800290E5E7D00B62348 /* mine_ProjectApp.swift in Sources */,
 				C1789812290E61F400B62348 /* TabBar.swift in Sources */,
