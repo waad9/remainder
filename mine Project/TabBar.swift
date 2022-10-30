@@ -19,6 +19,9 @@ struct TabBar: View {
             QickTimerSummary().tabItem{Image(systemName: "house")
                 Text("home2")
             }
+            QickTimerSummary().tabItem{Image(systemName: "house")
+                Text("home3")
+            }
         }
         //----------------------------------------
     }
