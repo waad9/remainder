@@ -151,6 +151,8 @@ struct QuickTimer: View {
             // Button("Set"){}
             //--------------------------------
         //button
+            
+            
         }//v2
         .navigationTitle(" Quick Timer")
         .navigationBarTitleDisplayMode(.inline)
@@ -158,6 +160,7 @@ struct QuickTimer: View {
                 .resizable(resizingMode: .tile)
             .foregroundColor(Color("Color")) })
         }// NavigationView {
+        
         }
         //nav
 
