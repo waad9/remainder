@@ -152,10 +152,12 @@ struct QuickTimer: View {
                        NavigationLink(destination: QickTimerSummary()) {
                           Text("Set").font(.title3).padding()
                            //.frame()
-                       .foregroundColor(.white)
-                       .background(Color(red: 0.958, green: 0.441, blue: 0.351))
-                       .cornerRadius(15)
-                       .padding()
+                               .frame(width: 350, height: 40)
+                               .foregroundColor(.white)
+                               .background(Color(red: 0.958, green: 0.441, blue: 0.351))
+                               .cornerRadius(15)
+                               .padding()
+                           
                        }
             
             // Button("Set"){}
