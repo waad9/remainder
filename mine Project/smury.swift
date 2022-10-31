@@ -135,7 +135,9 @@ struct smury: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
                         .resizable(resizingMode: .tile)
-                    .foregroundColor(Color("Color")) })
+                    .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
+                    
+                })
                 .padding()
                 
             
