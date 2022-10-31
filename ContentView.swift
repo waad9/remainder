@@ -18,7 +18,7 @@ struct ContentView: View {
             
             VStack {
                 VStack(alignment: .leading) {
-                    Text("Select break details")
+                    Text("Select break details ")
                  
                     
                 }//.padding()
@@ -151,7 +151,8 @@ struct ContentView: View {
                 
                 
                 
-            }.padding()
+            }
+            //.padding()
             
             // button save
             
