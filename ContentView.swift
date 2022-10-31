@@ -18,7 +18,7 @@ struct ContentView: View {
             
             VStack {
                 VStack(alignment: .leading) {
-                    Text("Select break details")
+                    Text("Select break details ")
                  
                     
                 }//.padding()
@@ -45,9 +45,7 @@ struct ContentView: View {
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
                         
-                        Button("Games"){}
-                            .buttonStyle(.bordered)
-                            .foregroundColor(Color(.black))
+                      
                         Button("Relaxation" ){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
@@ -57,7 +55,7 @@ struct ContentView: View {
                         Button("Entertainment"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                        Button("Focus"){}
+                        Button("Encouraging"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
                         
@@ -89,12 +87,11 @@ struct ContentView: View {
                     }//.padding()
                     Text("Break type")
                     
+                    
                     HStack{ Button("Health"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                        Button("Games"){}
-                            .buttonStyle(.bordered)
-                            .foregroundColor(Color(.black))
+                      
                         Button("Relaxation" ){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
@@ -104,7 +101,7 @@ struct ContentView: View {
                         Button("Entertainment"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                        Button("Focus"){}
+                        Button("Encouraging"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
                         
@@ -151,7 +148,8 @@ struct ContentView: View {
                 
                 
                 
-            }.padding()
+            }
+            //.padding()
             
             // button save
             
