@@ -58,12 +58,20 @@ struct smury: View {
         //        .foregroundColor(Color("Color 1"))
             VStack{
                 //---------------------------------
+              
+                Text("Working days")
+                    .font(.largeTitle)
+                    .foregroundColor(Color(.black))
+                    .multilineTextAlignment(.leading)
+                    .padding(.trailing, 126.0)
+                
                 VStack{
+                    
                     Text("Working days: Sunday to Thursdat")
                     Text("Working Time: 9:00AM to 1:00PM")
                         .font(.body).padding(-9)
                 }//V1
-                .padding()
+            .padding()
                                     .frame(width: 370, height: 120)
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 15)
@@ -76,9 +84,10 @@ struct smury: View {
                 
                 
                 //---------------------------------
-                Text("Breakss typs")
+                Text("Breakss typss")
                     .font(.largeTitle)
-                    .foregroundColor(Color("Color 1"))
+                    .foregroundColor(Color(.black))
+                    .padding(.trailing, 125.0)
                 VStack{
                     
                     VStack{
