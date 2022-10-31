@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A916CFF290F9C8400043230 /* smury.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A916CFE290F9C8400043230 /* smury.swift */; };
 		4ACA6769290EFE210057F5AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA6768290EFE210057F5AB /* ContentView.swift */; };
+		C1014561290FBE2600B6319D /* SetSchedule1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1014560290FBE2600B6319D /* SetSchedule1.swift */; };
 		C1789800290E5E7D00B62348 /* mine_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17897FF290E5E7D00B62348 /* mine_ProjectApp.swift */; };
 		C1789804290E5E7D00B62348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1789803290E5E7D00B62348 /* Assets.xcassets */; };
 		C1789807290E5E7D00B62348 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1789806290E5E7D00B62348 /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		4A916CFE290F9C8400043230 /* smury.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smury.swift; sourceTree = "<group>"; };
 		4ACA6768290EFE210057F5AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
+		C1014560290FBE2600B6319D /* SetSchedule1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetSchedule1.swift; sourceTree = "<group>"; };
 		C17897FC290E5E7D00B62348 /* mine Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mine Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17897FF290E5E7D00B62348 /* mine_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mine_ProjectApp.swift; sourceTree = "<group>"; };
 		C1789803290E5E7D00B62348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		C17897FE290E5E7D00B62348 /* mine Project */ = {
 			isa = PBXGroup;
 			children = (
+				C1014560290FBE2600B6319D /* SetSchedule1.swift */,
 				C178981D290FBB3700B62348 /* SecondIView.swift */,
 				4ACA6768290EFE210057F5AB /* ContentView.swift */,
 				4A916CFE290F9C8400043230 /* smury.swift */,
@@ -159,6 +162,7 @@
 				4A916CFF290F9C8400043230 /* smury.swift in Sources */,
 				C178981E290FBB3700B62348 /* SecondIView.swift in Sources */,
 				C1789812290E61F400B62348 /* TabBar.swift in Sources */,
+				C1014561290FBE2600B6319D /* SetSchedule1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
