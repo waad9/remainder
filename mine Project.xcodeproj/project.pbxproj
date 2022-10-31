@@ -63,6 +63,7 @@
 		C17897FE290E5E7D00B62348 /* mine Project */ = {
 			isa = PBXGroup;
 			children = (
+				9F17E492290FBAFA000C9D52 /* FirstPage.swift */,
 				4ACA6768290EFE210057F5AB /* ContentView.swift */,
 				9F17E492290FBAFA000C9D52 /* FirstPage.swift */,
 				4A916CFE290F9C8400043230 /* smury.swift */,
