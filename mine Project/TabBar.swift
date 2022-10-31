@@ -13,7 +13,7 @@ struct TabBar: View {
         TabView{
             
             
-            SecondView().tabItem{Image(systemName: "square.grid.3x3.square")
+            ContentView().tabItem{Image(systemName: "square.grid.3x3.square")
                 Text("Schedule")
             }
             
