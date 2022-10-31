@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4A916CFF290F9C8400043230 /* smury.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A916CFE290F9C8400043230 /* smury.swift */; };
+		4AAA82062910287F0076AE1E /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAA82052910287F0076AE1E /* FirstPage.swift */; };
+		4AAA8208291028940076AE1E /* SecondIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAA8207291028940076AE1E /* SecondIView.swift */; };
 		4ACA6769290EFE210057F5AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA6768290EFE210057F5AB /* ContentView.swift */; };
-		9F17E493290FBAFA000C9D52 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F17E492290FBAFA000C9D52 /* FirstPage.swift */; };
-		9F17E499290FC537000C9D52 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F17E498290FC537000C9D52 /* SecondView.swift */; };
 		C1789800290E5E7D00B62348 /* mine_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17897FF290E5E7D00B62348 /* mine_ProjectApp.swift */; };
 		C1789804290E5E7D00B62348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1789803290E5E7D00B62348 /* Assets.xcassets */; };
 		C1789807290E5E7D00B62348 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1789806290E5E7D00B62348 /* Preview Assets.xcassets */; };
@@ -21,9 +21,9 @@
 
 /* Begin PBXFileReference section */
 		4A916CFE290F9C8400043230 /* smury.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smury.swift; sourceTree = "<group>"; };
+		4AAA82052910287F0076AE1E /* FirstPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		4AAA8207291028940076AE1E /* SecondIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondIView.swift; sourceTree = "<group>"; };
 		4ACA6768290EFE210057F5AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
-		9F17E492290FBAFA000C9D52 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstPage.swift; path = ../FirstPage.swift; sourceTree = "<group>"; };
-		9F17E498290FC537000C9D52 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		C17897FC290E5E7D00B62348 /* mine Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mine Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17897FF290E5E7D00B62348 /* mine_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mine_ProjectApp.swift; sourceTree = "<group>"; };
 		C1789803290E5E7D00B62348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,12 +63,10 @@
 		C17897FE290E5E7D00B62348 /* mine Project */ = {
 			isa = PBXGroup;
 			children = (
-				9F17E498290FC537000C9D52 /* SecondView.swift */,
-				9F17E492290FBAFA000C9D52 /* FirstPage.swift */,
+				4AAA82052910287F0076AE1E /* FirstPage.swift */,
+				4AAA8207291028940076AE1E /* SecondIView.swift */,
 				4ACA6768290EFE210057F5AB /* ContentView.swift */,
-				9F17E492290FBAFA000C9D52 /* FirstPage.swift */,
 				4A916CFE290F9C8400043230 /* smury.swift */,
-				9F17E498290FC537000C9D52 /* SecondView.swift */,
 				C17897FF290E5E7D00B62348 /* mine_ProjectApp.swift */,
 				C178980F290E605C00B62348 /* QickTimerSummary.swift */,
 				C178980D290E5F3C00B62348 /* QuickTimer.swift */,
@@ -159,9 +157,9 @@
 			files = (
 				C178980E290E5F3C00B62348 /* QuickTimer.swift in Sources */,
 				4ACA6769290EFE210057F5AB /* ContentView.swift in Sources */,
-				9F17E499290FC537000C9D52 /* SecondView.swift in Sources */,
 				C1789810290E605C00B62348 /* QickTimerSummary.swift in Sources */,
-				9F17E493290FBAFA000C9D52 /* FirstPage.swift in Sources */,
+				4AAA82062910287F0076AE1E /* FirstPage.swift in Sources */,
+				4AAA8208291028940076AE1E /* SecondIView.swift in Sources */,
 				C1789800290E5E7D00B62348 /* mine_ProjectApp.swift in Sources */,
 				4A916CFF290F9C8400043230 /* smury.swift in Sources */,
 				C1789812290E61F400B62348 /* TabBar.swift in Sources */,

@@ -27,7 +27,7 @@ struct ContentView: View {
                 //firest break *******
                 
                 VStack{
-                    Text("First Break")
+                    Text("First Break ")
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
                     HStack{
@@ -105,7 +105,7 @@ struct ContentView: View {
                     }
                     
                     HStack{
-                        Button("Relaxation" ){}
+                        Button("Relaxation"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
                         Button("Health"){}
