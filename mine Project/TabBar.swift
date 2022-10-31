@@ -13,14 +13,14 @@ struct TabBar: View {
         TabView{
             
             
-            QuickTimer().tabItem{Image(systemName: "house")
-                Text("home")
+            QuickTimer().tabItem{Image(systemName: "square.grid.3x3.square")
+                Text("Schedule")
             }
-            QickTimerSummary().tabItem{Image(systemName: "Timer")
-                Text("home2")
+            QuickTimer().tabItem{Image(systemName: "timer")
+                Text("Qick Timer")
             }
-            QickTimerSummary().tabItem{Image(systemName: "house")
-                Text("home3")
+            QickTimerSummary().tabItem{Image(systemName: "gear")
+                Text("Settings")
             }
         }
         //----------------------------------------
