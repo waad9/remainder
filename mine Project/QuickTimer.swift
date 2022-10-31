@@ -152,7 +152,7 @@ struct QuickTimer: View {
             //--------------------------------
         //button
             
-            
+          
         }//v2
         .navigationTitle(" Quick Timer")
         .navigationBarTitleDisplayMode(.inline)

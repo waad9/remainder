@@ -22,7 +22,8 @@ struct TabBar: View {
             QickTimerSummary().tabItem{Image(systemName: "gear")
                 Text("Settings")
             }
-        }
+        }.accentColor(Color(red: 0.958, green: 0.441, blue: 0.351))
+        
         //----------------------------------------
     }
 }
