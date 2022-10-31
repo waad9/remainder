@@ -28,7 +28,6 @@ struct QuickTimer: View {
            
             VStack{
             HStack{
-                Text("shahad")
             Text("Enter Working Hours").font(.title2)
             
             //------------Dropdown------------
