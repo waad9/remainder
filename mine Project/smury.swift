@@ -68,8 +68,9 @@ struct smury: View {
                 VStack{
                     
                     Text("Working days: Sunday to Thursdat")
+                        .padding(.trailing, 62.0)
                     Text("Working Time: 9:00AM to 1:00PM")
-                        .font(.body).padding(-9)
+                        .font(.body).padding(.trailing, 62.0)
                 }//V1
             .padding()
                                     .frame(width: 370, height: 120)
@@ -84,7 +85,7 @@ struct smury: View {
                 
                 
                 //---------------------------------
-                Text("Breakss typss")
+                Text("Breakss typs")
                     .font(.largeTitle)
                     .foregroundColor(Color(.black))
                     .padding(.trailing, 125.0)
@@ -92,16 +93,20 @@ struct smury: View {
                     
                     VStack{
                         Text("Each day you will have 2 breaks")
+                            .padding(.trailing, 60.0)
                         HStack{
                             
                             
                             Text("1-").foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
                             Text("Health")
+                                .padding(.trailing, 167.0)
                         }
                         HStack{
-                            Text("2-").foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
+                            Text("2-").foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351)).padding(.trailing, 2.0)
                             Text("Entertamint")
                                 .font(.body)
+                                .padding(.trailing, 125.0)
+                            
                         }
                     }
                 } //V2

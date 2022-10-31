@@ -32,6 +32,7 @@ struct ContentView: View {
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
                     HStack{
                         DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
+                            .padding(0.0)
                         // .foregroundColor(Color("Color 1"))
                         
                         DatePicker("To", selection: $second, displayedComponents: .hourAndMinute)
@@ -40,6 +41,8 @@ struct ContentView: View {
                         
                     }//.padding()
                     Text("Break type")
+                        .padding(.trailing, 190.0)
+                        .font(.title2)
                     
                     
                     HStack{ Button("Health"){}
@@ -87,6 +90,8 @@ struct ContentView: View {
                         
                     }//.padding()
                     Text("Break type")
+                        .font(.title2)
+                        .padding(.trailing, 190.0)
                     
                     
                     HStack{ Button("Health"){}
