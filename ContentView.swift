@@ -16,6 +16,7 @@ struct ContentView: View {
         NavigationView{
             
             
+            
             VStack {
                 VStack(alignment: .leading) {
                     Text("Select break details ")
@@ -135,18 +136,27 @@ struct ContentView: View {
                  
                  .padding()*/
                 
-                Button("Save") {
-                    //print("Button tapped!")
-                }.font(.title3).padding()
-                //.frame()
-                    .frame(width: 350, height: 40)
-                    .foregroundColor(.white)
-                    .background(Color(red: 0.958, green: 0.441, blue: 0.351))
-                    .cornerRadius(15)
-                    .padding()
-                
-                
-                
+//                Button("Save") {
+//                    //print("Button tapped!")
+//                }.font(.title3).padding()
+//                //.frame()
+//                    .frame(width: 350, height: 40)
+//                    .foregroundColor(.white)
+//                    .background(Color(red: 0.958, green: 0.441, blue: 0.351))
+//                    .cornerRadius(15)
+//                    .padding()
+//
+//
+                NavigationLink(destination: smury()) {
+                   Text("Set").font(.title3).padding()
+                    //.frame()
+                        .frame(width: 350, height: 40)
+                        .foregroundColor(.white)
+                        .background(Color(red: 0.958, green: 0.441, blue: 0.351))
+                        .cornerRadius(15)
+                        .padding()
+                    
+                }
                 
             }
             //.padding()
@@ -157,6 +167,7 @@ struct ContentView: View {
              }
              .frame(width: 350 ,height: 200)
              .foregroundColor(.orange)*/
+           
             
         }.padding()
         
