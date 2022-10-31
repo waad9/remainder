@@ -41,18 +41,21 @@ struct smury: View {
                     Text("Breaks")
                         .font(.title3)
                 }//v
+            
                 .font(.title3)
                 .padding()
                 .frame(width: 110, height: 100)
                 .foregroundColor(.white)
                 .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                 .cornerRadius(15)
+                
                 //---------------------------------
             }//h
-            Spacer()///======================================
-            Text("Working days")
-                .font(.largeTitle)
-                .foregroundColor(Color("Color 1"))
+           
+            ///======================================
+       //     Text("Working days")
+       //         .font(.largeTitle)
+        //        .foregroundColor(Color("Color 1"))
             VStack{
                 //---------------------------------
                 VStack{
@@ -61,13 +64,14 @@ struct smury: View {
                         .font(.body).padding(-9)
                 }//V1
                 .padding()
-                .frame(width: 370, height: 120)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(lineWidth: 2)
-                        .stroke(Color(red: 0.958, green: 0.441, blue: 0.351))
-                    
-                )
+                                    .frame(width: 370, height: 120)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 15)
+                                        .stroke(lineWidth: 2)
+                                        .stroke(Color(red: 0.958, green: 0.441, blue: 0.351))
+                                        
+                                    )
+                
                
                 
                 
@@ -93,15 +97,15 @@ struct smury: View {
                     }
                 } //V2
                 .padding()
-                .frame(width: 370, height: 120)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(lineWidth: 2)
-                        .stroke(Color(red: 0.958, green: 0.441, blue: 0.351))
-                    
-                )
+                                    .frame(width: 370, height: 120)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 15)
+                                        .stroke(lineWidth: 2)
+                                        .stroke(Color(red: 0.958, green: 0.441, blue: 0.351))
+                                        
+                                    )
                
-                
+                                    .padding()
                 
                 //---------------------------------
                 
@@ -109,7 +113,7 @@ struct smury: View {
                 
             }//v2
             .padding()
-            Spacer()
+          //Spacer()
             
             Button("Start") {
                 //print("Button tapped!")
@@ -119,7 +123,7 @@ struct smury: View {
                 .foregroundColor(.white)
                 .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                 .cornerRadius(15)
-               // .padding()
+               //.padding()
             
             Button("Delete") {
                 //print("Button tapped!")
@@ -128,7 +132,7 @@ struct smury: View {
                 .frame(width: 300, height: 20)
                 .foregroundColor(.black)
                 .cornerRadius(15)
-               // .padding()
+                //.padding()
           
             
                 .navigationTitle("Summary")
@@ -138,6 +142,7 @@ struct smury: View {
                     .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
                     
                 })
+            //Spacer()
                 .padding()
                 
             

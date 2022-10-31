@@ -45,9 +45,7 @@ struct ContentView: View {
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
                         
-                        Button("Games"){}
-                            .buttonStyle(.bordered)
-                            .foregroundColor(Color(.black))
+                      
                         Button("Relaxation" ){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
@@ -89,12 +87,11 @@ struct ContentView: View {
                     }//.padding()
                     Text("Break type")
                     
+                    
                     HStack{ Button("Health"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                        Button("Games"){}
-                            .buttonStyle(.bordered)
-                            .foregroundColor(Color(.black))
+                      
                         Button("Relaxation" ){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
