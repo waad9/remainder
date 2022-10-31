@@ -19,7 +19,7 @@ struct ContentView: View {
             VStack {
                 VStack(alignment: .leading) {
                     Text("Select break details")
-                   Text("p")
+                 
                     
                 }//.padding()
                 
