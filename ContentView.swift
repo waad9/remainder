@@ -35,7 +35,7 @@ struct ContentView: View {
                             .padding(0.0)
                         // .foregroundColor(Color("Color 1"))
                         
-                        DatePicker("To", selection: $second, displayedComponents: .hourAndMinute)
+                        DatePicker("to", selection: $second, displayedComponents: .hourAndMinute)
                         //.foregroundColor(Color("Color 1"))
                         
                         
@@ -45,21 +45,21 @@ struct ContentView: View {
                         .font(.title2)
                     
                     
-                    HStack{ Button("Health"){}
+                    HStack{ Button("Encouraging"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
                         
                       
-                        Button("Relaxation" ){}
+                        Button("Entertainment"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
                     }
                     
                     HStack{
-                        Button("Entertainment"){}
+                        Button("Relaxation" ){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                        Button("Encouraging"){}
+                        Button("Health"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
                         
@@ -85,7 +85,7 @@ struct ContentView: View {
                         
                         DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
                             .foregroundColor(Color(.black))
-                        DatePicker("To", selection: $second, displayedComponents: .hourAndMinute)
+                        DatePicker("to", selection: $second, displayedComponents: .hourAndMinute)
                             .foregroundColor(Color(.black))
                         
                     }//.padding()
@@ -94,20 +94,21 @@ struct ContentView: View {
                         .padding(.trailing, 190.0)
                     
                     
-                    HStack{ Button("Health"){}
+                    HStack{ Button("Encouraging"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
+                        
                       
-                        Button("Relaxation" ){}
+                        Button("Entertainment"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
                     }
                     
                     HStack{
-                        Button("Entertainment"){}
+                        Button("Relaxation" ){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                        Button("Encouraging"){}
+                        Button("Health"){}
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
                         
