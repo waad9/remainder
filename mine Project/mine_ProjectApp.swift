@@ -11,7 +11,7 @@ import SwiftUI
 struct mine_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            QuickTimer()
+            TabBar()
         }
     }
 }

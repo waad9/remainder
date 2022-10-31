@@ -23,7 +23,11 @@ struct QuickTimer: View {
     var body: some View {
         
         NavigationView{
+            
+           // NavigationLink {QickTimerSummary()}
+            
         VStack{
+           
            
            
             VStack{
@@ -138,6 +142,12 @@ struct QuickTimer: View {
             
             //--------------------------------
 
+            
+            
+          
+            
+            
+            
                        //Text("Navigation Link Below:")
                        NavigationLink(destination: QickTimerSummary()) {
                           Text("Set").font(.title3).padding()

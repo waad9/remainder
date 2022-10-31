@@ -10,6 +10,7 @@ import SwiftUI
 struct QickTimerSummary: View {
     var body: some View {
         VStack{
+           
             HStack{
     //---------------------------------
                 VStack(spacing: 20){
