@@ -16,7 +16,7 @@ struct TabBar: View {
             QuickTimer().tabItem{Image(systemName: "house")
                 Text("home")
             }
-            QickTimerSummary().tabItem{Image(systemName: "house")
+            QickTimerSummary().tabItem{Image(systemName: "Timer")
                 Text("home2")
             }
             QickTimerSummary().tabItem{Image(systemName: "house")
