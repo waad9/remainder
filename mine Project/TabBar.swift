@@ -16,9 +16,11 @@ struct TabBar: View {
             QuickTimer().tabItem{Image(systemName: "square.grid.3x3.square")
                 Text("Schedule")
             }
+            
             QuickTimer().tabItem{Image(systemName: "timer")
                 Text("Qick Timer")
             }
+            
             QickTimerSummary().tabItem{Image(systemName: "gear")
                 Text("Settings")
             }
