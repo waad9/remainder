@@ -25,6 +25,20 @@ struct ContentView: View {
     
     @State private var currentUser : User = User()
     
+    @State private var buttonColor =  Color(UIColor.systemBackground)
+    
+
+    @State private var isHealthClicked = false
+    @State private var isEncouragingClicked = false
+    @State private var isEntertainmentClicked = false
+    @State private var isRelaxationClicked = false
+
+    
+    
+    
+    @State private var buttonTag = 0
+
+    
     var body: some View {
        // NavigationView{
             
@@ -58,23 +72,51 @@ struct ContentView: View {
                         .font(.title2)
                     
                     
-                    HStack{ Button("Encouraging"){}
-                            .buttonStyle(.bordered)
-                            .foregroundColor(Color(.black))
+                    HStack{ Button("Encouraging"){
                         
-                      
-                        Button("Entertainment"){}
+                        isEncouragingClicked.toggle()
+                        isHealthClicked = false
+                        isEntertainmentClicked = false
+                        isRelaxationClicked = false
+                    }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
+                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
+                      
+                        Button("Entertainment"){
+                            
+                            isEntertainmentClicked.toggle()
+                            isHealthClicked = false
+                            isRelaxationClicked = false
+                            isEncouragingClicked = false
+                        }
+                            .buttonStyle(.bordered)
+                            .foregroundColor(Color(.black))
+                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
                     }
                     
                     HStack{
-                        Button("Relaxation" ){}
+                        Button("Relaxation" ){
+                            
+                            isRelaxationClicked.toggle()
+                            isHealthClicked = false
+                            isEncouragingClicked = false
+                            isEntertainmentClicked = false
+                        }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                        Button("Health"){}
+                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
+                    
+                        Button("Health"){
+                            
+                            isHealthClicked.toggle()
+                            isRelaxationClicked = false
+                            isEncouragingClicked = false
+                            isEntertainmentClicked = false
+                        }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
+                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
                         
                     }
                 }
@@ -112,23 +154,56 @@ struct ContentView: View {
                         .padding(.trailing, 190.0)
                     
                     
-                    HStack{ Button("Encouraging"){}
+                    HStack{ Button("Encouraging"){
+                        
+                        
+                        isEncouragingClicked.toggle()
+                        isHealthClicked = false
+                        isEntertainmentClicked = false
+                        isRelaxationClicked = false
+                        
+                    }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
+                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
                         
                       
-                        Button("Entertainment"){}
+                        Button("Entertainment"){
+                            
+                            isEntertainmentClicked.toggle()
+                            isHealthClicked = false
+                            isRelaxationClicked = false
+                            isEncouragingClicked = false
+
+                        
+                        }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
+                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
                     }
                     
                     HStack{
-                        Button("Relaxation"){}
+                        Button("Relaxation"){
+                            
+                            isRelaxationClicked.toggle()
+                            isHealthClicked = false
+                            isEncouragingClicked = false
+                            isEntertainmentClicked = false
+                        }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                        Button("Health"){}
+                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
+                        
+                        Button("Health"){
+                            
+                            isHealthClicked.toggle()
+                            isRelaxationClicked = false
+                            isEncouragingClicked = false
+                            isEntertainmentClicked = false
+                        }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
+                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
                         
                     }
                     
