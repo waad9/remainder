@@ -11,7 +11,7 @@ struct FirstPage: View {
     @State private var tapCount = UserDefaults.standard.bool(forKey:)
 
         var body: some View {
-            NavigationView{
+           // NavigationView{
                 VStack {
                     Text("Name")
                         .font(.title)
@@ -57,33 +57,7 @@ struct FirstPage: View {
                             //.padding(<#T##length: CGFloat##CGFloat#>)
                                 .background(Color(red: 0.933, green: 0.933, blue: 0.938))
                             
-                            
-                            
-                            //                    Button ("Set your schedule"){
-                            //                    }
-                            //                    .frame(width: 350, height: 40)
-                            //    //                    .overlay(
-                            //    //                        RoundedRectangle(cornerRadius: 15)
-                            //    //                            .stroke(lineWidth: 2)
-                            //    //                            .stroke(Color(red: 0.958, green: 0.441, blue: 0.351))
-                            //    //                    )
-                            //                        .foregroundColor(.white)
-                            //                    //.padding(6)
-                            //                        .font (.title2)
-                            //                        .foregroundColor(.white)
-                            //                        .background(Color(red: 0.958, green: 0.441, blue: 0.351))
-                            //
-                            //                    Button ("Start a quick timer"){
-                            //                    } .frame(width: 350, height: 40)
-                            //                        .foregroundColor(.white)
-                            //                    //.padding(6)
-                            //                        .font (.title2)
-                            //                      //.systemFont(ofSize: 19.0, weight: 5.bold)
-                            //                      .foregroundColor(.white)
-                            //                      .background(Color(red: 0.958, green: 0.441, blue: 0.351))
-                            //                    RoundedRectangle(cornerRadius: 15)
-                            //                        .stroke(lineWidth: 2)
-                            //                        .stroke(Color(red: 0.958, green: 0.441, blue: 0.351))
+                           
                         }
                         .padding(20)
                         
@@ -103,6 +77,11 @@ struct FirstPage: View {
                     }//bott
                     
                     //Text("Navigation Link Below:")
+                    Button {
+                        UserDefaults.standard.set(true, forKey: "on")
+                    } label: {
+                        
+                    }
                     NavigationLink(destination: QuickTimer()) {
                         Text("Start a quick timer").font(.title3).padding()
                         //.frame()
@@ -115,7 +94,7 @@ struct FirstPage: View {
                     }//bott
                     
                 }//v
-            }//NavigationView
+            //}//NavigationView
             }//Body
                           }
 

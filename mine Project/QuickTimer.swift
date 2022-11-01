@@ -96,12 +96,7 @@ struct QuickTimer: View {
                        }
                    }.padding()
                 
-                ///.frame(width:150, height: 20)
-                //.foregroundColor(.white)
-                //.background(Color(red: 0.958, green: 0.441, blue: 0.351))
-                ///.shadow(color: Color(red: 0.958, green: 0.441, blue: 0.351) radius: 7)
-                //.cornerRadius(15)
-                   /// .padding()
+            
             //------------Dropdown2------------
             }.padding()//h2
            
@@ -122,29 +117,6 @@ struct QuickTimer: View {
             )
             
         
-            /*.padding()
-            .border(Color(red: 0.958, green: 0.441, blue: 0.351))
-            .frame(maxWidth: .infinity)
-            .foregroundColor(.black)
-            .background(Color.white)
-            .cornerRadius(15)
-             */
-            
-        //--------Button---------------
-//       Button("Set") {
-//            //print("Button tapped!")
-//        }.font(.title3).padding()
-//                //.frame()
-//            .foregroundColor(.white)
-//            .background(Color(red: 0.958, green: 0.441, blue: 0.351))
-//            .cornerRadius(15)
-//            .padding()
-            
-            //--------------------------------
-
-            
-            
-          
             
             
             
