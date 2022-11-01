@@ -7,10 +7,23 @@
 
 import SwiftUI
 
+
+struct User {
+  
+    
+    
+    
+    //User Info ...
+    
+    var breakTimeStart = Date()
+    var breakTimeEnd = Date()
+
+}
 struct ContentView: View {
     @State private var first = Date.now
     @State private var second = Date.now
     
+    @State private var currentUser : User = User()
     
     var body: some View {
         NavigationView{
@@ -33,11 +46,14 @@ struct ContentView: View {
                     HStack{
                         DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
                             .padding(0.0)
+                        
+                     
                         // .foregroundColor(Color("Color 1"))
                         
                         DatePicker("to", selection: $second, displayedComponents: .hourAndMinute)
                         //.foregroundColor(Color("Color 1"))
                         
+                      
                         
                     }//.padding()
                     Text("Break type")
@@ -75,6 +91,11 @@ struct ContentView: View {
                         .stroke(Color(red: 0.958, green: 0.441, blue: 0.351)
                                ))
                 
+                
+                
+                
+               
+
                 // second break ********
                 
                 VStack{
@@ -162,6 +183,10 @@ struct ContentView: View {
                         .cornerRadius(15)
                         .padding()
                     
+                    
+                    
+                }.onTapGesture {
+                    setTimes ()
                 }
                 
             }
@@ -181,6 +206,13 @@ struct ContentView: View {
         
     }
     
+    
+    func setTimes ()
+    {
+        currentUser.breakTimeStart = first
+        
+        currentUser.breakTimeEnd = second
+    }
     
     
     struct ContentView_Previews: PreviewProvider {
