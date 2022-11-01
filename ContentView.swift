@@ -28,11 +28,10 @@ struct ContentView: View {
     @State private var buttonColor =  Color(UIColor.systemBackground)
     
 
-    @State private var isHealthClicked = false
     @State private var isEncouragingClicked = false
     @State private var isEntertainmentClicked = false
     @State private var isRelaxationClicked = false
-
+    @State private var isHealthClicked = false
     
     
     
