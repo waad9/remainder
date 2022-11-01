@@ -51,7 +51,7 @@ struct smury: View {
                 
                 //---------------------------------
             }//h
-           
+          
             ///======================================
        //     Text("Working days")
        //         .font(.largeTitle)
@@ -157,10 +157,11 @@ struct smury: View {
 //
 //                })
             //Spacer()
-                .padding()
+                //.padding()
                 
             
         }//v1
+       
         .navigationTitle("Summary")
         .navigationBarTitleDisplayMode(.inline)
 //        .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
@@ -170,7 +171,8 @@ struct smury: View {
         //.background(Color.gray)
         
     //}//
-        .padding(10)
+        .padding()
+        
        
 }//body
 
