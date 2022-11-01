@@ -22,7 +22,7 @@ struct QuickTimer: View {
     
     var body: some View {
         
-      //  NavigationView{
+        NavigationView{
             
            // NavigationLink {QickTimerSummary()}
             
@@ -157,24 +157,22 @@ struct QuickTimer: View {
                                .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                                .cornerRadius(15)
                                .padding()
-                           
                        }
-            
             // Button("Set"){}
             //--------------------------------
         //button
             
           
         }//v2
-        .navigationTitle(" Quick Timer")
+        .navigationTitle("Quick Timer")
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
-                .resizable(resizingMode: .tile)
-            .foregroundColor(Color("Color")) })
-        }// NavigationView {
+//        .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
+//                .resizable(resizingMode: .tile)
+//            .foregroundColor(Color("Color")) })
+        }//nav
         
-        //}
-        //nav
+        }//body
+        
 
 
     }

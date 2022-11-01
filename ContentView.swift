@@ -26,7 +26,7 @@ struct ContentView: View {
     @State private var currentUser : User = User()
     
     var body: some View {
-        NavigationView{
+       // NavigationView{
             
             
             
@@ -46,12 +46,10 @@ struct ContentView: View {
                     HStack{
                         DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
                             .padding(0.0)
-                        
-                     
-                        // .foregroundColor(Color("Color 1"))
+                        // .foregroundColor(Color())
                         
                         DatePicker("to", selection: $second, displayedComponents: .hourAndMinute)
-                        //.foregroundColor(Color("Color 1"))
+                        //.foregroundColor()
                         
                       
                         
@@ -149,11 +147,11 @@ struct ContentView: View {
                 
                 // titell *******
                 
-                .navigationTitle("Set a Schedule")
-                .navigationBarTitleDisplayMode(.inline)
-                .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
-                        .resizable(resizingMode: .tile)
-                    .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351)) })
+//                .navigationTitle("Set a Schedule")
+//                .navigationBarTitleDisplayMode(.inline)
+//                .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
+//                        .resizable(resizingMode: .tile)
+//                    .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351)) })
                 
                 
                 /* Button("Save"){
@@ -189,22 +187,18 @@ struct ContentView: View {
                     setTimes ()
                 }
                 
-            }
-            //.padding()
+            }//v
             
-            // button save
-            
-            /*  Button("Save"){
-             }
-             .frame(width: 350 ,height: 200)
-             .foregroundColor(.orange)*/
-           
-            
-        }.padding()
+        //}
+        .padding()
         
         
+        .navigationTitle("CCset A schedule")
+        .navigationBarTitleDisplayMode(.inline)
+
         
-    }
+        
+    }//body
     
     
     func setTimes ()

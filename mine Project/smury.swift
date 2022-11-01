@@ -11,7 +11,7 @@ import SwiftUI
 struct smury: View {
     var body: some View {
         
-        NavigationView{
+        //NavigationView{
         VStack{
             HStack{
                 //---------------------------------
@@ -55,7 +55,7 @@ struct smury: View {
             ///======================================
        //     Text("Working days")
        //         .font(.largeTitle)
-        //        .foregroundColor(Color("Color 1"))
+        //        .foregroundColor()
             VStack{
                 //---------------------------------
               
@@ -163,13 +163,13 @@ struct smury: View {
         }//v1
         .navigationTitle("Summary")
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
-                .resizable(resizingMode: .tile)
-            .foregroundColor(Color("Color")) })
+//        .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
+//                .resizable(resizingMode: .tile)
+//            .foregroundColor(Color("Color")) })
            
         //.background(Color.gray)
         
-    }//
+    //}//
         .padding(10)
        
 }//body

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TabBar: View {
     var body: some View {
+        //NavigationView{
         //--------------tab viwe------------------
         TabView{
             
@@ -27,6 +28,7 @@ struct TabBar: View {
         }.accentColor(Color(red: 0.958, green: 0.441, blue: 0.351))
         
         //----------------------------------------
+  //  }//NavigationView
     }
 }
 

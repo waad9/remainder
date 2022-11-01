@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct FirstPage: View {
-  
+    @State private var tapCount = UserDefaults.standard.bool(forKey:)
+
         var body: some View {
             NavigationView{
                 VStack {
@@ -84,13 +85,13 @@ struct FirstPage: View {
                             //                        .stroke(lineWidth: 2)
                             //                        .stroke(Color(red: 0.958, green: 0.441, blue: 0.351))
                         }
-                        .padding(55.0)
+                        .padding(20)
                         
                         
                     }
                     
                     //Text("Navigation Link Below:")
-                    NavigationLink(destination: QuickTimer()) {
+                    NavigationLink(destination: SecondIView()) {
                         Text("Set your schedule").font(.title3).padding()
                         //.frame()
                             .frame(width: 350, height: 40)
