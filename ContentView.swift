@@ -42,7 +42,10 @@ struct ContentView: View {
     
     
     @State private var buttonTag = 0
-
+    @ObservedObject var notificationManager: NotificationManager
+    @State private var title = ""
+    @State private var date = Date()
+    @Binding var isPresented: Bool
     
     var body: some View {
        // NavigationView{
@@ -103,6 +106,19 @@ struct ContentView: View {
                         isHealthClicked = false
                         isEntertainmentClicked = false
                         isRelaxationClicked = false
+                        let dateComponents = Calendar.current.dateComponents([.hour, .minute], from: date)
+                        guard let selectedHour = dateComponents.hour, let minute = dateComponents.minute else { return }
+                        
+                        let hour = Calendar.current.component(.hour, from: first)
+                        
+                        
+                        notificationManager.createLocalNotification(title: "title", body: "Encouraging Notifaction!!!!", hour: selectedHour, minute: minute) { error in
+                            if error == nil {
+                                DispatchQueue.main.async {
+                                    self.isPresented = false
+                                }
+                            }
+                        }
                     }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
@@ -331,7 +347,8 @@ struct ContentView: View {
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            ContentView(notificationManager: NotificationManager(),
+                        isPresented: .constant(false))
         }
     }
 }

@@ -34,7 +34,10 @@ struct Task: Identifiable {
         @State var value2 = ""
             var placeholder2 = "Number of breaks"//Working Hours
             var dropDownList2 = ["1", "2", "3"]
+        @ObservedObject var notificationManager: NotificationManager = NotificationManager()
         
+        
+        @State private var isActive = false
         var body: some View {
             
             NavigationView {
@@ -167,7 +170,7 @@ struct Task: Identifiable {
                     
                     
                                //Text("Navigation Link Below:")
-                               NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: ContentView(notificationManager: notificationManager, isPresented: $isActive )) {
                                   Text("Next").font(.title3).padding()
                                    //.frame()
                                        .frame(width: 350, height: 40)

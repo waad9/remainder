@@ -37,7 +37,7 @@ final class NotificationManager: ObservableObject {
         }
     }
     
-    func createLocalNotification(title: String, hour: Int, minute: Int, completion: @escaping (Error?) -> Void) {
+    func createLocalNotification(title: String,body: String ,  hour: Int, minute: Int, completion: @escaping (Error?) -> Void) {
         var dateComponents = DateComponents()
         dateComponents.hour = hour
         dateComponents.minute = minute
@@ -47,7 +47,7 @@ final class NotificationManager: ObservableObject {
         let notificationContent = UNMutableNotificationContent()
         notificationContent.title = "It's bre time"
         notificationContent.sound = .default
-        notificationContent.body = "A Five miute walk"
+        notificationContent.body = body
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: notificationContent, trigger: trigger)
         
