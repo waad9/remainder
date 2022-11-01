@@ -34,6 +34,11 @@ struct ContentView: View {
     @State private var isRelaxationClicked = false
     @State private var isHealthClicked = false
     
+    @State private var isEncouraging1Clicked = false
+    @State private var isEntertainment1Clicked = false
+    @State private var isRelaxation1Clicked = false
+    @State private var isHealth1Clicked = false
+    
     
     
     @State private var buttonTag = 0
@@ -98,7 +103,7 @@ struct ContentView: View {
                     }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
+                            .background(isEncouragingClicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                       
                         Button("Entertainment"){
                             
@@ -109,7 +114,7 @@ struct ContentView: View {
                         }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
+                            .background(isEntertainmentClicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                     }
                     
                     HStack{
@@ -122,7 +127,7 @@ struct ContentView: View {
                         }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
+                            .background(isRelaxationClicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                     
                         Button("Health"){
                             
@@ -133,14 +138,14 @@ struct ContentView: View {
                         }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
+                            .background(isHealthClicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                         
                     }
                 }
                 
                 
                 .padding()
-                .frame(width: 350, height: 250)
+                .frame(width: 350, height: 266)
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(lineWidth: 2)
@@ -192,53 +197,53 @@ struct ContentView: View {
                     HStack{ Button("Encouraging"){
                         
                         
-                        isEncouragingClicked.toggle()
-                        isHealthClicked = false
-                        isEntertainmentClicked = false
-                        isRelaxationClicked = false
+                        isEncouraging1Clicked.toggle()
+                        isHealth1Clicked = false
+                        isEntertainment1Clicked = false
+                        isRelaxation1Clicked = false
                         
                     }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
+                            .background(isEncouraging1Clicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                         
                       
                         Button("Entertainment"){
                             
-                            isEntertainmentClicked.toggle()
-                            isHealthClicked = false
-                            isRelaxationClicked = false
-                            isEncouragingClicked = false
+                            isEntertainment1Clicked.toggle()
+                            isHealth1Clicked = false
+                            isRelaxation1Clicked = false
+                            isEncouraging1Clicked = false
 
                         
                         }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
+                            .background(isEntertainment1Clicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                     }
                     
                     HStack{
                         Button("Relaxation"){
                             
-                            isRelaxationClicked.toggle()
-                            isHealthClicked = false
-                            isEncouragingClicked = false
-                            isEntertainmentClicked = false
+                            isRelaxation1Clicked.toggle()
+                            isHealth1Clicked = false
+                            isEncouraging1Clicked = false
+                            isEntertainment1Clicked = false
                         }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
+                            .background(isRelaxation1Clicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                         
                         Button("Health"){
                             
-                            isHealthClicked.toggle()
-                            isRelaxationClicked = false
-                            isEncouragingClicked = false
-                            isEntertainmentClicked = false
+                            isHealth1Clicked.toggle()
+                            isRelaxation1Clicked = false
+                            isEncouraging1Clicked = false
+                            isEntertainment1Clicked = false
                         }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                            .background(isHealthClicked ? .red : Color(UIColor.systemBackground) )
+                            .background(isHealth1Clicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                         
                     }
                     
@@ -246,7 +251,7 @@ struct ContentView: View {
                 
                 
                 .padding()
-                .frame(width: 350, height: 250)
+                .frame(width: 350, height: 266)
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(lineWidth: 2)
