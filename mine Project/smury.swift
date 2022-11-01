@@ -169,10 +169,10 @@ struct smury: View {
            
         //.background(Color.gray)
         
-    }//body
+    }//
         .padding(10)
        
-}
+}//body
 
     }
   

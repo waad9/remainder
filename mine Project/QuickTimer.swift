@@ -22,7 +22,7 @@ struct QuickTimer: View {
     
     var body: some View {
         
-        NavigationView{
+      //  NavigationView{
             
            // NavigationLink {QickTimerSummary()}
             
@@ -173,7 +173,7 @@ struct QuickTimer: View {
             .foregroundColor(Color("Color")) })
         }// NavigationView {
         
-        }
+        //}
         //nav
 
 
