@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct smury: View {
+    @State var isshownsecondview = false
     var body: some View {
         
         //NavigationView{
@@ -131,6 +132,8 @@ struct smury: View {
             
             Button("Start") {
                 //print("Button tapped!")
+                isshownsecondview.toggle()
+                
             }.font(.title3).padding()
             //.frame()
                 .frame(width: 350, height: 40)
@@ -138,9 +141,12 @@ struct smury: View {
                 .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                 .cornerRadius(15)
                //.padding()
-            
+                .fullScreenCover(isPresented:$isshownsecondview){
+                    SecondIView()
+                }
             Button("Delete") {
                 //print("Button tapped!")
+                
             }.font(.title3).padding()
             //.frame()
                 .frame(width: 300, height: 20)

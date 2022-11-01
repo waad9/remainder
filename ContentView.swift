@@ -63,6 +63,8 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
                         .padding(.top, -15.0)
+                    
+                    
                     HStack{
                         Text ("From ")
                             .font(.callout)
