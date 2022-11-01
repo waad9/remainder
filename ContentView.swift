@@ -62,6 +62,7 @@ struct ContentView: View {
                     Text("First Break ")
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
+                        .padding(.top, -15.0)
                     HStack{
                         Text ("From ")
                             .font(.callout)
@@ -71,7 +72,7 @@ struct ContentView: View {
                         
                         
                         DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
-                            .padding(.trailing, 54.0)
+                            .padding(.trailing, 56.0)
                             .foregroundColor(Color(red: 0.167, green: 0.249, blue: 0.282))
                         
                         
@@ -163,6 +164,7 @@ struct ContentView: View {
                     Text("Second Break")
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
+                        .padding(.top, -15.0)
                     HStack{
                         
                         Text ("From ")
