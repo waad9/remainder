@@ -38,7 +38,7 @@ struct NotificationView: View {
                             }
                         }
                     } label: {
-                        Text("Creat")
+                        Text("Create")
                             .fontWeight(.semibold)
                             .frame(maxWidth: .infinity)
                             .contentShape(Rectangle())
