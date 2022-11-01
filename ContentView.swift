@@ -28,6 +28,7 @@ struct ContentView: View {
     @State private var buttonColor =  Color(UIColor.systemBackground)
     
 
+
     @State private var isEncouragingClicked = false
     @State private var isEntertainmentClicked = false
     @State private var isRelaxationClicked = false
@@ -57,11 +58,28 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
                     HStack{
-                        DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
-                            .padding(0.0)
+                        Text ("From ")
+                            .font(.callout)
+                            .padding(.leading, 25.0)
+    //                     .fontWeight(.regular)
+                            .foregroundColor(Color.black)
                         
-                        DatePicker("to", selection: $second, displayedComponents: .hourAndMinute)
-                        //.foregroundColor()
+                        
+                        DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
+                            .padding(.trailing, 54.0)
+                            .foregroundColor(Color(red: 0.167, green: 0.249, blue: 0.282))
+                        
+                        
+                        
+                        Text ("to ")
+                            .font(.callout)
+                            .padding(-10.0)
+                       //     .fontWeight(.regular)
+                            .foregroundColor(Color.black)
+                        
+                        DatePicker("To", selection: $second, displayedComponents: .hourAndMinute)
+                            .padding(.trailing, 43.0)
+                            //.foregroundColor(Color(red: 0.167, green: 0.249, blue: 0.282)
                         
                       
                         
@@ -142,10 +160,28 @@ struct ContentView: View {
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
                     HStack{
                         
+                        Text ("From ")
+                            .font(.callout)
+                            .padding(.leading, 25.0)
+    //                     .fontWeight(.regular)
+                            .foregroundColor(Color.black)
+                        
+                        
                         DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
-                            .foregroundColor(Color(.black))
-                        DatePicker("to", selection: $second, displayedComponents: .hourAndMinute)
-                            .foregroundColor(Color(.black))
+                            .padding(.trailing, 54.0)
+                            .foregroundColor(Color(red: 0.167, green: 0.249, blue: 0.282))
+                        
+                        
+                        
+                        Text ("to ")
+                            .font(.callout)
+                            .padding(-10.0)
+                       //     .fontWeight(.regular)
+                            .foregroundColor(Color.black)
+                        
+                        DatePicker("To", selection: $second, displayedComponents: .hourAndMinute)
+                            .padding(.trailing, 43.0)
+                            //.foregroundColor(Color(red: 0.167, green: 0.249, blue: 0.282)
                         
                     }//.padding()
                     Text("Break type")
@@ -252,16 +288,18 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                         .cornerRadius(15)
+                    
                         .padding()
                     
                     
                     
-                }.onTapGesture {
+                }
+                .onTapGesture {
                     setTimes ()
                 }
                 
             }//v
-            
+             
         //}
         .padding()
         
