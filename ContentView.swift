@@ -46,7 +46,6 @@ struct ContentView: View {
                     HStack{
                         DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
                             .padding(0.0)
-                        // .foregroundColor(Color())
                         
                         DatePicker("to", selection: $second, displayedComponents: .hourAndMinute)
                         //.foregroundColor()
