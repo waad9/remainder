@@ -9,11 +9,19 @@ import SwiftUI
 
 
 
+
 @main
 struct mine_ProjectApp: App {
+    
+    @State var onBoarding = UserDefaults.standard.bool(forKey: "on")
     var body: some Scene {
         WindowGroup {
-            TabBar()
+            if onBoarding {
+                TabBar()//yes
+            } else {
+                homep()//yes
+                //QuickTimer()
+            }
         }
     }
 }

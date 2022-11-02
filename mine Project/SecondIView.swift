@@ -155,7 +155,7 @@ struct Task: Identifiable {
                                /// .padding()
                         //------------Dropdown2------------
                     }
-                    .padding(.all, -9.0)
+                    .padding(.all,9.0)
                     .frame(width: 370, height: 60.0)
                     .overlay(
                         RoundedRectangle(cornerRadius: 15)
@@ -177,7 +177,7 @@ struct Task: Identifiable {
                                        .padding()
                                }
                 }
-                .navigationTitle("2 set A schedule")
+                .navigationTitle(" set A schedule")
             .navigationBarTitleDisplayMode(.inline)
             }
         }//body
