@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct smury: View {
+    @State var isshownsecondview = false
     var body: some View {
         
         //NavigationView{
@@ -51,7 +52,7 @@ struct smury: View {
                 
                 //---------------------------------
             }//h
-           
+          
             ///======================================
        //     Text("Working days")
        //         .font(.largeTitle)
@@ -59,13 +60,19 @@ struct smury: View {
             VStack{
                 //---------------------------------
               
-                Text("Working days")
-                    .font(.largeTitle)
-                    .foregroundColor(Color(.black))
-                    .multilineTextAlignment(.leading)
-                    .padding(.trailing, 126.0)
+//                Text("Working days")
+//                    .font(.largeTitle)
+//                    .foregroundColor(Color(.black))
+//                    .multilineTextAlignment(.leading)
+//                    .padding(.trailing, 126.0)
                 
                 VStack{
+                    
+                      Text("Working days")
+                          .font(.largeTitle)
+                          .foregroundColor(Color(.black))
+                          .multilineTextAlignment(.leading)
+                          .padding(.bottom, 2.0)
                     
                     Text("Working days: Sunday to Thursdat")
                         .padding(.trailing, 62.0)
@@ -85,13 +92,18 @@ struct smury: View {
                 
                 
                 //---------------------------------
-                Text("Breakss typs")
-                    .font(.largeTitle)
-                    .foregroundColor(Color(.black))
-                    .padding(.trailing, 125.0)
+//                Text("Breakss typs")
+//                    .font(.largeTitle)
+//                    .foregroundColor(Color(.black))
+//                    .padding(.trailing, 125.0)
                 VStack{
                     
                     VStack{
+                        Text("Breakss typs")
+                            .font(.largeTitle)
+                            .foregroundColor(Color(.black))
+                            .padding(.vertical, 1.0)
+                        
                         Text("Each day you will have 2 breaks")
                             .padding(.trailing, 60.0)
                         HStack{
@@ -105,6 +117,7 @@ struct smury: View {
                             Text("2-").foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351)).padding(.trailing, 2.0)
                             Text("Entertamint")
                                 .font(.body)
+                                .multilineTextAlignment(.leading)
                                 .padding(.trailing, 125.0)
                             
                         }
@@ -131,6 +144,8 @@ struct smury: View {
             
             Button("Start") {
                 //print("Button tapped!")
+                isshownsecondview.toggle()
+                
             }.font(.title3).padding()
             //.frame()
                 .frame(width: 350, height: 40)
@@ -138,9 +153,12 @@ struct smury: View {
                 .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                 .cornerRadius(15)
                //.padding()
-            
+                .fullScreenCover(isPresented:$isshownsecondview){
+                    SecondIView()
+                }
             Button("Delete") {
                 //print("Button tapped!")
+                
             }.font(.title3).padding()
             //.frame()
                 .frame(width: 300, height: 20)
@@ -157,10 +175,11 @@ struct smury: View {
 //
 //                })
             //Spacer()
-                .padding()
+                //.padding()
                 
             
         }//v1
+       
         .navigationTitle("Summary")
         .navigationBarTitleDisplayMode(.inline)
 //        .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
@@ -170,7 +189,8 @@ struct smury: View {
         //.background(Color.gray)
         
     //}//
-        .padding(10)
+        .padding()
+        
        
 }//body
 

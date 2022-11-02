@@ -25,6 +25,25 @@ struct ContentView: View {
     
     @State private var currentUser : User = User()
     
+    @State private var buttonColor =  Color(UIColor.systemBackground)
+    
+
+
+    @State private var isEncouragingClicked = false
+    @State private var isEntertainmentClicked = false
+    @State private var isRelaxationClicked = false
+    @State private var isHealthClicked = false
+    
+    @State private var isEncouraging1Clicked = false
+    @State private var isEntertainment1Clicked = false
+    @State private var isRelaxation1Clicked = false
+    @State private var isHealth1Clicked = false
+    
+    
+    
+    @State private var buttonTag = 0
+
+    
     var body: some View {
        // NavigationView{
             
@@ -43,12 +62,32 @@ struct ContentView: View {
                     Text("First Break ")
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
+                        .padding(.top, -15.0)
+                    
+                    
                     HStack{
-                        DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
-                            .padding(0.0)
+                        Text ("From ")
+                            .font(.callout)
+                            .padding(.leading, 25.0)
+    //                     .fontWeight(.regular)
+                            .foregroundColor(Color.black)
                         
-                        DatePicker("to", selection: $second, displayedComponents: .hourAndMinute)
-                        //.foregroundColor()
+                        
+                        DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
+                            .padding(.trailing, 56.0)
+                            .foregroundColor(Color(red: 0.167, green: 0.249, blue: 0.282))
+                        
+                        
+                        
+                        Text ("to ")
+                            .font(.callout)
+                            .padding(-10.0)
+                       //     .fontWeight(.regular)
+                            .foregroundColor(Color.black)
+                        
+                        DatePicker("To", selection: $second, displayedComponents: .hourAndMinute)
+                            .padding(.trailing, 43.0)
+                            //.foregroundColor(Color(red: 0.167, green: 0.249, blue: 0.282)
                         
                       
                         
@@ -58,30 +97,58 @@ struct ContentView: View {
                         .font(.title2)
                     
                     
-                    HStack{ Button("Encouraging"){}
-                            .buttonStyle(.bordered)
-                            .foregroundColor(Color(.black))
+                    HStack{ Button("Encouraging"){
                         
-                      
-                        Button("Entertainment"){}
+                        isEncouragingClicked.toggle()
+                        isHealthClicked = false
+                        isEntertainmentClicked = false
+                        isRelaxationClicked = false
+                    }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
+                            .background(isEncouragingClicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
+                      
+                        Button("Entertainment"){
+                            
+                            isEntertainmentClicked.toggle()
+                            isHealthClicked = false
+                            isRelaxationClicked = false
+                            isEncouragingClicked = false
+                        }
+                            .buttonStyle(.bordered)
+                            .foregroundColor(Color(.black))
+                            .background(isEntertainmentClicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                     }
                     
                     HStack{
-                        Button("Relaxation" ){}
+                        Button("Relaxation" ){
+                            
+                            isRelaxationClicked.toggle()
+                            isHealthClicked = false
+                            isEncouragingClicked = false
+                            isEntertainmentClicked = false
+                        }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                        Button("Health"){}
+                            .background(isRelaxationClicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
+                    
+                        Button("Health"){
+                            
+                            isHealthClicked.toggle()
+                            isRelaxationClicked = false
+                            isEncouragingClicked = false
+                            isEntertainmentClicked = false
+                        }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
+                            .background(isHealthClicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                         
                     }
                 }
                 
                 
                 .padding()
-                .frame(width: 350, height: 250)
+                .frame(width: 350, height: 266)
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(lineWidth: 2)
@@ -99,12 +166,31 @@ struct ContentView: View {
                     Text("Second Break")
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
+                        .padding(.top, -15.0)
                     HStack{
                         
+                        Text ("From ")
+                            .font(.callout)
+                            .padding(.leading, 25.0)
+    //                     .fontWeight(.regular)
+                            .foregroundColor(Color.black)
+                        
+                        
                         DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
-                            .foregroundColor(Color(.black))
-                        DatePicker("to", selection: $second, displayedComponents: .hourAndMinute)
-                            .foregroundColor(Color(.black))
+                            .padding(.trailing, 54.0)
+                            .foregroundColor(Color(red: 0.167, green: 0.249, blue: 0.282))
+                        
+                        
+                        
+                        Text ("to ")
+                            .font(.callout)
+                            .padding(-10.0)
+                       //     .fontWeight(.regular)
+                            .foregroundColor(Color.black)
+                        
+                        DatePicker("To", selection: $second, displayedComponents: .hourAndMinute)
+                            .padding(.trailing, 43.0)
+                            //.foregroundColor(Color(red: 0.167, green: 0.249, blue: 0.282)
                         
                     }//.padding()
                     Text("Break type")
@@ -112,23 +198,56 @@ struct ContentView: View {
                         .padding(.trailing, 190.0)
                     
                     
-                    HStack{ Button("Encouraging"){}
+                    HStack{ Button("Encouraging"){
+                        
+                        
+                        isEncouraging1Clicked.toggle()
+                        isHealth1Clicked = false
+                        isEntertainment1Clicked = false
+                        isRelaxation1Clicked = false
+                        
+                    }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
+                            .background(isEncouraging1Clicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                         
                       
-                        Button("Entertainment"){}
+                        Button("Entertainment"){
+                            
+                            isEntertainment1Clicked.toggle()
+                            isHealth1Clicked = false
+                            isRelaxation1Clicked = false
+                            isEncouraging1Clicked = false
+
+                        
+                        }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
+                            .background(isEntertainment1Clicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                     }
                     
                     HStack{
-                        Button("Relaxation"){}
+                        Button("Relaxation"){
+                            
+                            isRelaxation1Clicked.toggle()
+                            isHealth1Clicked = false
+                            isEncouraging1Clicked = false
+                            isEntertainment1Clicked = false
+                        }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
-                        Button("Health"){}
+                            .background(isRelaxation1Clicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
+                        
+                        Button("Health"){
+                            
+                            isHealth1Clicked.toggle()
+                            isRelaxation1Clicked = false
+                            isEncouraging1Clicked = false
+                            isEntertainment1Clicked = false
+                        }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
+                            .background(isHealth1Clicked ? Color(red: 0.958, green: 0.441, blue: 0.351) : Color(UIColor.systemBackground) )
                         
                     }
                     
@@ -136,7 +255,7 @@ struct ContentView: View {
                 
                 
                 .padding()
-                .frame(width: 350, height: 250)
+                .frame(width: 350, height: 266)
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(lineWidth: 2)
@@ -178,16 +297,18 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                         .cornerRadius(15)
+                    
                         .padding()
                     
                     
                     
-                }.onTapGesture {
+                }
+                .onTapGesture {
                     setTimes ()
                 }
                 
             }//v
-            
+             
         //}
         .padding()
         
