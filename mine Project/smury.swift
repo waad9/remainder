@@ -60,13 +60,19 @@ struct smury: View {
             VStack{
                 //---------------------------------
               
-                Text("Working days")
-                    .font(.largeTitle)
-                    .foregroundColor(Color(.black))
-                    .multilineTextAlignment(.leading)
-                    .padding(.trailing, 126.0)
+//                Text("Working days")
+//                    .font(.largeTitle)
+//                    .foregroundColor(Color(.black))
+//                    .multilineTextAlignment(.leading)
+//                    .padding(.trailing, 126.0)
                 
                 VStack{
+                    
+                      Text("Working days")
+                          .font(.largeTitle)
+                          .foregroundColor(Color(.black))
+                          .multilineTextAlignment(.leading)
+                          .padding(.bottom, 2.0)
                     
                     Text("Working days: Sunday to Thursdat")
                         .padding(.trailing, 62.0)
@@ -86,13 +92,18 @@ struct smury: View {
                 
                 
                 //---------------------------------
-                Text("Breakss typs")
-                    .font(.largeTitle)
-                    .foregroundColor(Color(.black))
-                    .padding(.trailing, 125.0)
+//                Text("Breakss typs")
+//                    .font(.largeTitle)
+//                    .foregroundColor(Color(.black))
+//                    .padding(.trailing, 125.0)
                 VStack{
                     
                     VStack{
+                        Text("Breakss typs")
+                            .font(.largeTitle)
+                            .foregroundColor(Color(.black))
+                            .padding(.vertical, 1.0)
+                        
                         Text("Each day you will have 2 breaks")
                             .padding(.trailing, 60.0)
                         HStack{
@@ -106,6 +117,7 @@ struct smury: View {
                             Text("2-").foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351)).padding(.trailing, 2.0)
                             Text("Entertamint")
                                 .font(.body)
+                                .multilineTextAlignment(.leading)
                                 .padding(.trailing, 125.0)
                             
                         }
