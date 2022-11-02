@@ -10,9 +10,10 @@ import SwiftUI
 
 struct smury: View {
     @State var isshownsecondview = false
+    @State var isModal: Bool = false
     var body: some View {
         
-        //NavigationView{
+        NavigationView{
         VStack{
             HStack{
                 //---------------------------------
@@ -142,29 +143,98 @@ struct smury: View {
             .padding()
           //Spacer()
             
-            Button("Start") {
-                //print("Button tapped!")
-                isshownsecondview.toggle()
-                
-            }.font(.title3).padding()
-            //.frame()
-                .frame(width: 350, height: 40)
+            //--------------------------
+            Button("Edit"){
+                //===
+                //===
+                self.isModal = true
+            }.frame(width: 350, height: 40)
                 .foregroundColor(.white)
                 .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                 .cornerRadius(15)
-               //.padding()
-                .fullScreenCover(isPresented:$isshownsecondview){
+                .padding()
+                .sheet(isPresented: $isModal, content: {
                     SecondIView()
-                }
+                    //smury()
+                  //  SecondIView()
+                    
+                    //TabBar(selection: 1)
+                    
+            })
+            //===================
+            //--------------------------------------------
+
             Button("Delete") {
                 //print("Button tapped!")
-                
+                isshownsecondview.toggle()
+
             }.font(.title3).padding()
             //.frame()
-                .frame(width: 300, height: 20)
-                .foregroundColor(.black)
-                .cornerRadius(15)
-                //.padding()
+//                .frame(width: 350, height: 40)
+//                .foregroundColor(.white)
+//                .background(Color(red: 0.958, green: 0.441, blue: 0.351))
+//                .cornerRadius(15)
+
+                .fullScreenCover(isPresented:$isshownsecondview){
+                    //SecondIView()
+                    TabBar(selection: 1)
+                    
+                }.foregroundColor(.black)
+            //===================
+            
+            //
+            //--------------------------
+//            Button("Delete"){
+//                //===
+//
+//                //===
+//                self.isModal = true
+//            }.font(.title3).padding()
+//                        //.frame()
+//                            .frame(width: 300, height: 20)
+//                            .foregroundColor(.black)
+//                            .cornerRadius(15)
+//                            .fullScreenCover(isPresented:$isshownsecondview){
+//                                TabBar(selection: 1)
+//                           }
+////                .sheet(isPresented: $isModal, content: {
+////                    //smury()
+////                  //  SecondIView()
+////
+////                    TabBar(selection: 1)
+////
+////            })
+            //--------------------------------------------
+            //--------------------------------------------
+//
+//            Button("Start") {
+//                //print("Button tapped!")
+//                isshownsecondview.toggle()
+//
+//            }.font(.title3).padding()
+//            //.frame()
+//                .frame(width: 350, height: 40)
+//                .foregroundColor(.white)
+//                .background(Color(red: 0.958, green: 0.441, blue: 0.351))
+//                .cornerRadius(15)
+
+////                .fullScreenCover(isPresented:$isshownsecondview){
+////                    SecondIView()
+////               }
+//            /////=========================
+//            Button("Delete") {
+//                //print("Button tapped!")
+//
+//            }.font(.title3).padding()
+//            //.frame()
+//                .frame(width: 300, height: 20)
+//                .foregroundColor(.black)
+//                .cornerRadius(15)
+//                .fullScreenCover(isPresented:$isshownsecondview){
+//                                SecondIView()
+//                           }
+//            //================================
+//                //.padding()
           
 //
 //                .navigationTitle("Summary")
@@ -188,8 +258,8 @@ struct smury: View {
            
         //.background(Color.gray)
         
-    //}//
-        .padding()
+    }//nav
+        //.padding()
         
        
 }//body

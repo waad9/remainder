@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QickTimerSummary: View {
     var body: some View {
-        NavigationView{
+        //NavigationView{
         
         VStack{
            
@@ -141,13 +141,13 @@ struct QickTimerSummary: View {
             
             
         }//v1
-        .navigationTitle(" Quick Timer Summary")
+        .navigationTitle("Summary")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
                 .resizable(resizingMode: .tile)
             .foregroundColor(Color("Color")) })
             
-        }// NavigationView{
+        //}// NavigationView{
         //.background(Color.gray)
     
     }//body

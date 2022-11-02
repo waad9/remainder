@@ -177,9 +177,9 @@ struct Task: Identifiable {
                                        .padding()
                                }
                 }
-                .navigationTitle(" set A schedule")
+                .navigationTitle(" Set a Schedule")
             .navigationBarTitleDisplayMode(.inline)
-            }
+            }//nav
         }//body
     }
     struct SecondIView_Previews: PreviewProvider {

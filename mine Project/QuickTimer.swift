@@ -16,7 +16,7 @@ struct QuickTimer: View {
     
     @State var value2 = ""
         var placeholder2 = "Break Length"//Working Hours
-        var dropDownList2 = ["1 Min", "5 Min", "15 Min"]
+        var dropDownList2 = ["1 Min", "5 Min", "15 Min","30"]
 
 
     

@@ -13,6 +13,7 @@
 		9F17E4AB291113C7000C9D52 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F17E4AA291113C7000C9D52 /* NotificationView.swift */; };
 		9F17E4AD29111411000C9D52 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F17E4AC29111411000C9D52 /* NotificationManager.swift */; };
 		C11281122910ECD5009D5311 /* SecondIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11281112910ECD5009D5311 /* SecondIView.swift */; };
+		C11853D229125240005A356C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11853D129125240005A356C /* Settings.swift */; };
 		C1789800290E5E7D00B62348 /* mine_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17897FF290E5E7D00B62348 /* mine_ProjectApp.swift */; };
 		C1789804290E5E7D00B62348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1789803290E5E7D00B62348 /* Assets.xcassets */; };
 		C1789807290E5E7D00B62348 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1789806290E5E7D00B62348 /* Preview Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		9F17E4AA291113C7000C9D52 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		9F17E4AC29111411000C9D52 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		C11281112910ECD5009D5311 /* SecondIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondIView.swift; sourceTree = "<group>"; };
+		C11853D129125240005A356C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C17897FC290E5E7D00B62348 /* mine Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mine Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17897FF290E5E7D00B62348 /* mine_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mine_ProjectApp.swift; sourceTree = "<group>"; };
 		C1789803290E5E7D00B62348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		C17897FE290E5E7D00B62348 /* mine Project */ = {
 			isa = PBXGroup;
 			children = (
+				C11853D129125240005A356C /* Settings.swift */,
 				4AAA82052910287F0076AE1E /* FirstPage.swift */,
 				9F17E4AA291113C7000C9D52 /* NotificationView.swift */,
 				9F17E4AC29111411000C9D52 /* NotificationManager.swift */,
@@ -166,6 +169,7 @@
 			files = (
 				C178980E290E5F3C00B62348 /* QuickTimer.swift in Sources */,
 				C192990A2911288C00A81D44 /* homep.swift in Sources */,
+				C11853D229125240005A356C /* Settings.swift in Sources */,
 				4ACA6769290EFE210057F5AB /* ContentView.swift in Sources */,
 				9F17E4AD29111411000C9D52 /* NotificationManager.swift in Sources */,
 				C11281122910ECD5009D5311 /* SecondIView.swift in Sources */,
