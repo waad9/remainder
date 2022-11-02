@@ -62,7 +62,7 @@ struct ContentView: View {
                 //firest break *******
                 
                 VStack{
-                    Text("First Break ")
+                    Text("First break ")
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
                         .padding(.top, -15.0)
@@ -167,7 +167,7 @@ struct ContentView: View {
                 // second break ********
                 
                 VStack{
-                    Text("Second Break")
+                    Text("Second break")
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
                         .padding(.top, -15.0)
