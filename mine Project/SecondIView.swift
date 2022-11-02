@@ -179,7 +179,7 @@ struct Task: Identifiable {
                 }
                 .navigationTitle(" Set a Schedule")
             .navigationBarTitleDisplayMode(.inline)
-            }
+            }//nav
         }//body
     }
     struct SecondIView_Previews: PreviewProvider {

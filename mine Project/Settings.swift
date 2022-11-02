@@ -16,7 +16,7 @@ struct Settings: View {
     let mainColor = Color(red: 243/255, green: 116/255, blue: 88/255)
     
     var body: some View {
-        ZStack {
+      //  ZStack {
             VStack {
                 Form {
                     Toggle("Dark mode", isOn: $IncludeMilk).tint(Color(red: 0.958, green: 0.441, blue: 0.351)).padding(10)
@@ -51,8 +51,9 @@ struct Settings: View {
                        
                 //}
             }
-            
-        }
+            .navigationTitle(" Set a Schedule")
+        .navigationBarTitleDisplayMode(.inline)
+        //}
         
     }
     
