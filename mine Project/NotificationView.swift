@@ -30,7 +30,7 @@ struct NotificationView: View {
                     Button {
                         let dateComponents = Calendar.current.dateComponents([.hour, .minute], from: date)
                         guard let hour = dateComponents.hour, let minute = dateComponents.minute else { return }
-                        notificationManager.createLocalNotification(title: "title", body: "Encouraging", hour: hour, minute: minute) { error in
+                        notificationManager.createLocalNotification(title: "tile", body: "Encouraging", hour: hour, minute: minute) { error in
                             if error == nil {
                                 DispatchQueue.main.async {
                                     self.isPresented = false
