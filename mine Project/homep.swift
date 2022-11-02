@@ -49,11 +49,11 @@ struct Firs1tPage: View {
     var body: some View {
        // NavigationView{
             VStack {
-                Text("Name")
-                    .font(.title)
-                //.padding()
-                    .foregroundColor(Color(red: 0.56, green: 0.565, blue: 0.586))
-                
+                Text("Just Break")
+                    .font(.largeTitle)
+                    .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
+//                    .foregroundColor(Color(red: 0.56, green: 0.565, blue: 0.586))
+//
                 Image("Image")
                     .resizable()
                     .frame(width: 400, height: 350)
@@ -111,6 +111,7 @@ struct Firs1tPage: View {
 //                        //.padding()
 //
 //                    }//bott
+                
                 //--------------------------
                 Button("Set your schedule"){
                     //===

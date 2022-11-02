@@ -177,7 +177,7 @@ struct Task: Identifiable {
                                        .padding()
                                }
                 }
-                .navigationTitle(" set A schedule")
+                .navigationTitle(" Set a Schedule")
             .navigationBarTitleDisplayMode(.inline)
             }
         }//body

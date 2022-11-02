@@ -141,7 +141,7 @@ struct QickTimerSummary: View {
             
             
         }//v1
-        .navigationTitle(" Quick Timer Summary")
+        .navigationTitle("Summary")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")
                 .resizable(resizingMode: .tile)
