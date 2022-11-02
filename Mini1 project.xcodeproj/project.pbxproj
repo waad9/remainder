@@ -69,14 +69,14 @@
 		4A829E1629126060006B56D7 /* Mini1 project */ = {
 			isa = PBXGroup;
 			children = (
-				4A829E2C29126088006B56D7 /* ContentView.swift */,
 				4A829E2B29126088006B56D7 /* FirstPage.swift */,
+				4A829E2529126088006B56D7 /* SecondIView.swift */,
+				4A829E2C29126088006B56D7 /* ContentView.swift */,
 				4A829E2D29126088006B56D7 /* homep.swift */,
 				4A829E2829126088006B56D7 /* NotificationManager.swift */,
 				4A829E2E29126088006B56D7 /* NotificationView.swift */,
 				4A829E2A29126088006B56D7 /* QickTimerSummary.swift */,
 				4A829E2929126088006B56D7 /* QuickTimer.swift */,
-				4A829E2529126088006B56D7 /* SecondIView.swift */,
 				4A829E2629126088006B56D7 /* smury.swift */,
 				4A829E2729126088006B56D7 /* TabBar.swift */,
 				4A829E1729126060006B56D7 /* Mini1_projectApp.swift */,
