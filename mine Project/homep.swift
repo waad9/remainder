@@ -25,11 +25,14 @@ struct homep: View {
    
     
     var body: some View {
-        if UserDefaults.standard.FirstPageShown {
-            Firs1tPage()
-        } else {
-            TabBar()
-        }
+        Firs1tPage()
+//        if UserDefaults.standard.FirstPageShown {
+//            //Firs1tPage()
+//            TabBar()
+//        } else {
+//            //TabBar()
+//            Firs1tPage()
+//        }
     }
 }
 
@@ -40,6 +43,9 @@ struct Firs1tPage: View {
     @State var ispresented = false
     //
     @State var isModal: Bool = false
+    @State var isModalT: Bool = false
+
+    
     var body: some View {
        // NavigationView{
             VStack {
@@ -107,6 +113,10 @@ struct Firs1tPage: View {
 //                    }//bott
                 //--------------------------
                 Button("Set your schedule"){
+                    //===
+                    UserDefaults.standard.set(true, forKey: "on")
+                    ispresented.toggle()
+                    //===
                     self.isModal = true
                 }.frame(width: 350, height: 40)
                     .foregroundColor(.white)
@@ -114,18 +124,30 @@ struct Firs1tPage: View {
                     .cornerRadius(15)
                     .padding()
                     .sheet(isPresented: $isModal, content: {
-                        SecondIView()
+                        //smury()
+                      //  SecondIView()
+                        
+                        TabBar(selection: 1)
+                        
                 })
                 //--------------------------------------------
                 Button("Start a quick timer"){
-                    self.isModal = true
+                    //===
+                    
+                    UserDefaults.standard.set(true, forKey: "on")
+                    ispresented.toggle()
+                    //===
+                    self.isModalT = true
                 }.frame(width: 350, height: 40)
                     .foregroundColor(.white)
                     .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                     .cornerRadius(15)
                     .padding()
-                    .sheet(isPresented: $isModal, content: {
-                    QuickTimer()
+                 //   .
+                    .sheet(isPresented: $isModalT, content: {
+                   // QuickTimer()
+                        
+                        TabBar(selection: 2)
                 })
                 //--------------------------------------------
                 //Text("Navigation Link Below:")

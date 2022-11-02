@@ -10,7 +10,6 @@ import SwiftUI
 
 
 
-
 @main
 struct mine_ProjectApp: App {
     
@@ -18,9 +17,10 @@ struct mine_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
             if onBoarding {
-                TabBar()
+                TabBar()//yes
             } else {
-                homep()
+                homep()//yes
+                //QuickTimer()
             }
         }
     }

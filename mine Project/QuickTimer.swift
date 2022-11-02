@@ -116,9 +116,6 @@ struct QuickTimer: View {
                 
             )
             
-        
-            
-            
             
                        //Text("Navigation Link Below:")
                        NavigationLink(destination: QickTimerSummary()) {

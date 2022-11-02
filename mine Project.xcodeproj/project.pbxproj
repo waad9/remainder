@@ -79,9 +79,9 @@
 				C178980D290E5F3C00B62348 /* QuickTimer.swift */,
 				C1789811290E61F400B62348 /* TabBar.swift */,
 				C11281112910ECD5009D5311 /* SecondIView.swift */,
+				C19299092911288C00A81D44 /* homep.swift */,
 				C1789803290E5E7D00B62348 /* Assets.xcassets */,
 				C1789805290E5E7D00B62348 /* Preview Content */,
-				C19299092911288C00A81D44 /* homep.swift */,
 			);
 			path = "mine Project";
 			sourceTree = "<group>";

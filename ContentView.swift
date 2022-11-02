@@ -192,7 +192,7 @@ struct ContentView: View {
         .padding()
         
         
-        .navigationTitle("CCset A schedule")
+        .navigationTitle("Set A schedule")
         .navigationBarTitleDisplayMode(.inline)
 
         
