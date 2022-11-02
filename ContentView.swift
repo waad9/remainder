@@ -103,6 +103,7 @@ struct ContentView: View {
                         isHealthClicked = false
                         isEntertainmentClicked = false
                         isRelaxationClicked = false
+                        
                     }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
