@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		4A829E1829126060006B56D7 /* Mini1_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E1729126060006B56D7 /* Mini1_projectApp.swift */; };
-		4A829E1A29126060006B56D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E1929126060006B56D7 /* ContentView.swift */; };
 		4A829E1C29126061006B56D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A829E1B29126061006B56D7 /* Assets.xcassets */; };
 		4A829E1F29126061006B56D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A829E1E29126061006B56D7 /* Preview Assets.xcassets */; };
+		4A829E2F29126088006B56D7 /* SecondIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E2529126088006B56D7 /* SecondIView.swift */; };
+		4A829E3029126088006B56D7 /* smury.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E2629126088006B56D7 /* smury.swift */; };
+		4A829E3129126088006B56D7 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E2729126088006B56D7 /* TabBar.swift */; };
+		4A829E3229126088006B56D7 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E2829126088006B56D7 /* NotificationManager.swift */; };
+		4A829E3329126088006B56D7 /* QuickTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E2929126088006B56D7 /* QuickTimer.swift */; };
+		4A829E3429126088006B56D7 /* QickTimerSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E2A29126088006B56D7 /* QickTimerSummary.swift */; };
+		4A829E3529126088006B56D7 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E2B29126088006B56D7 /* FirstPage.swift */; };
+		4A829E3629126088006B56D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E2C29126088006B56D7 /* ContentView.swift */; };
+		4A829E3729126088006B56D7 /* homep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E2D29126088006B56D7 /* homep.swift */; };
+		4A829E3829126088006B56D7 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A829E2E29126088006B56D7 /* NotificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A829E1429126060006B56D7 /* Mini1 project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini1 project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A829E1729126060006B56D7 /* Mini1_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini1_projectApp.swift; sourceTree = "<group>"; };
-		4A829E1929126060006B56D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A829E1B29126061006B56D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A829E1E29126061006B56D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A829E2529126088006B56D7 /* SecondIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondIView.swift; path = "../../ProjectD/remainder/mine Project/SecondIView.swift"; sourceTree = "<group>"; };
+		4A829E2629126088006B56D7 /* smury.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = smury.swift; path = "../../ProjectD/remainder/mine Project/smury.swift"; sourceTree = "<group>"; };
+		4A829E2729126088006B56D7 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = "../../ProjectD/remainder/mine Project/TabBar.swift"; sourceTree = "<group>"; };
+		4A829E2829126088006B56D7 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationManager.swift; path = "../../ProjectD/remainder/mine Project/NotificationManager.swift"; sourceTree = "<group>"; };
+		4A829E2929126088006B56D7 /* QuickTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuickTimer.swift; path = "../../ProjectD/remainder/mine Project/QuickTimer.swift"; sourceTree = "<group>"; };
+		4A829E2A29126088006B56D7 /* QickTimerSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QickTimerSummary.swift; path = "../../ProjectD/remainder/mine Project/QickTimerSummary.swift"; sourceTree = "<group>"; };
+		4A829E2B29126088006B56D7 /* FirstPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstPage.swift; path = "../../ProjectD/remainder/mine Project/FirstPage.swift"; sourceTree = "<group>"; };
+		4A829E2C29126088006B56D7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../ProjectD/remainder/ContentView.swift; sourceTree = "<group>"; };
+		4A829E2D29126088006B56D7 /* homep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = homep.swift; path = "../../ProjectD/remainder/mine Project/homep.swift"; sourceTree = "<group>"; };
+		4A829E2E29126088006B56D7 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationView.swift; path = "../../ProjectD/remainder/mine Project/NotificationView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +69,17 @@
 		4A829E1629126060006B56D7 /* Mini1 project */ = {
 			isa = PBXGroup;
 			children = (
+				4A829E2C29126088006B56D7 /* ContentView.swift */,
+				4A829E2B29126088006B56D7 /* FirstPage.swift */,
+				4A829E2D29126088006B56D7 /* homep.swift */,
+				4A829E2829126088006B56D7 /* NotificationManager.swift */,
+				4A829E2E29126088006B56D7 /* NotificationView.swift */,
+				4A829E2A29126088006B56D7 /* QickTimerSummary.swift */,
+				4A829E2929126088006B56D7 /* QuickTimer.swift */,
+				4A829E2529126088006B56D7 /* SecondIView.swift */,
+				4A829E2629126088006B56D7 /* smury.swift */,
+				4A829E2729126088006B56D7 /* TabBar.swift */,
 				4A829E1729126060006B56D7 /* Mini1_projectApp.swift */,
-				4A829E1929126060006B56D7 /* ContentView.swift */,
 				4A829E1B29126061006B56D7 /* Assets.xcassets */,
 				4A829E1D29126061006B56D7 /* Preview Content */,
 			);
@@ -137,8 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A829E1A29126060006B56D7 /* ContentView.swift in Sources */,
+				4A829E2F29126088006B56D7 /* SecondIView.swift in Sources */,
+				4A829E3329126088006B56D7 /* QuickTimer.swift in Sources */,
+				4A829E3029126088006B56D7 /* smury.swift in Sources */,
+				4A829E3829126088006B56D7 /* NotificationView.swift in Sources */,
+				4A829E3229126088006B56D7 /* NotificationManager.swift in Sources */,
 				4A829E1829126060006B56D7 /* Mini1_projectApp.swift in Sources */,
+				4A829E3629126088006B56D7 /* ContentView.swift in Sources */,
+				4A829E3129126088006B56D7 /* TabBar.swift in Sources */,
+				4A829E3729126088006B56D7 /* homep.swift in Sources */,
+				4A829E3429126088006B56D7 /* QickTimerSummary.swift in Sources */,
+				4A829E3529126088006B56D7 /* FirstPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +311,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +341,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
