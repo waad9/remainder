@@ -23,6 +23,9 @@ struct ContentView: View {
     @State private var first = Date.now
     @State private var second = Date.now
     
+    @State private var first1 = Date.now
+    @State private var second1 = Date.now
+    
     @State private var currentUser : User = User()
     
     @State private var buttonColor =  Color(UIColor.systemBackground)
@@ -59,7 +62,7 @@ struct ContentView: View {
                 //firest break *******
                 
                 VStack{
-                    Text("First Break ")
+                    Text("First break ")
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
                         .padding(.top, -15.0)
@@ -103,6 +106,7 @@ struct ContentView: View {
                         isHealthClicked = false
                         isEntertainmentClicked = false
                         isRelaxationClicked = false
+                        
                     }
                             .buttonStyle(.bordered)
                             .foregroundColor(Color(.black))
@@ -163,7 +167,7 @@ struct ContentView: View {
                 // second break ********
                 
                 VStack{
-                    Text("Second Break")
+                    Text("Second break")
                         .font(.largeTitle)
                         .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
                         .padding(.top, -15.0)
@@ -176,7 +180,7 @@ struct ContentView: View {
                             .foregroundColor(Color.black)
                         
                         
-                        DatePicker("From", selection: $first, displayedComponents: .hourAndMinute)
+                        DatePicker("From", selection: $first1, displayedComponents: .hourAndMinute)
                             .padding(.trailing, 54.0)
                             .foregroundColor(Color(red: 0.167, green: 0.249, blue: 0.282))
                         
@@ -188,7 +192,7 @@ struct ContentView: View {
                        //     .fontWeight(.regular)
                             .foregroundColor(Color.black)
                         
-                        DatePicker("To", selection: $second, displayedComponents: .hourAndMinute)
+                        DatePicker("To", selection: $second1, displayedComponents: .hourAndMinute)
                             .padding(.trailing, 43.0)
                             //.foregroundColor(Color(red: 0.167, green: 0.249, blue: 0.282)
                         
