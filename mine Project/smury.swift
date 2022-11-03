@@ -116,7 +116,7 @@ struct smury: View {
                         }
                         HStack{
                             Text("2-").foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351)).padding(.trailing, 2.0)
-                            Text("Entertamint")
+                            Text("Relaxation")
                                 .font(.body)
                                 .multilineTextAlignment(.leading)
                                 .padding(.trailing, 125.0)
