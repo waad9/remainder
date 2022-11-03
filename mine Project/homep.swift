@@ -45,11 +45,12 @@ struct Firs1tPage: View {
     @State var isModal: Bool = false
     @State var isModalT: Bool = false
 
-    
+    @State var isshownsecondview = false
+    @State private var isPresented = false
     var body: some View {
        // NavigationView{
             VStack {
-                Text("Just Break")
+                Text("Just Breaks")
                     .font(.largeTitle)
                     .foregroundColor(Color(red: 0.958, green: 0.441, blue: 0.351))
 //                    .foregroundColor(Color(red: 0.56, green: 0.565, blue: 0.586))
@@ -115,11 +116,14 @@ struct Firs1tPage: View {
                 //--------------------------
                 Button("Set your schedule"){
                     //===
+                    
                     UserDefaults.standard.set(true, forKey: "on")
                     ispresented.toggle()
+                    
                     //===
                     self.isModal = true
-                }.frame(width: 350, height: 40)
+                }
+                .frame(width: 350, height: 40)
                     .foregroundColor(.white)
                     .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                     .cornerRadius(15)
@@ -127,9 +131,9 @@ struct Firs1tPage: View {
                     .sheet(isPresented: $isModal, content: {
                         //smury()
                       //  SecondIView()
-                        
+
                         TabBar(selection: 1)
-                        
+
                 })
                 //--------------------------------------------
                 Button("Start a quick timer"){
@@ -144,9 +148,9 @@ struct Firs1tPage: View {
                     .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                     .cornerRadius(15)
                     .padding()
-                 //   .
+                 // new next
                     .sheet(isPresented: $isModalT, content: {
-                   // QuickTimer()
+                    //QuickTimer()
                         
                         TabBar(selection: 2)
                 })

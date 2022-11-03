@@ -75,7 +75,7 @@ struct Task: Identifiable {
                     }
                     
                     .padding(.top, 4)
-                    .frame(width: 370, height: 67.0)
+                    .frame(width: 370, height: 40.0)
                     .overlay(
                         RoundedRectangle(cornerRadius: 15)
                             .stroke(lineWidth: 2)
@@ -100,9 +100,9 @@ struct Task: Identifiable {
                         .cornerRadius(15)
 
                     }
-                    
+                    //.padding(-2)
                     .padding(.all, -9.0)
-                    .frame(width: 370, height: 340.0)
+                    .frame(width: 370, height: 360.0)
                     .overlay(
                         RoundedRectangle(cornerRadius: 15)
                             .stroke(lineWidth: 2)
@@ -155,8 +155,8 @@ struct Task: Identifiable {
                                /// .padding()
                         //------------Dropdown2------------
                     }
-                    .padding(.all,9.0)
-                    .frame(width: 370, height: 60.0)
+                    //.padding(.all,9.0)
+                    .frame(width: 370, height: 50.0)
                     .overlay(
                         RoundedRectangle(cornerRadius: 15)
                             .stroke(lineWidth: 2)
@@ -174,7 +174,7 @@ struct Task: Identifiable {
                                        .foregroundColor(.white)
                                        .background(Color(red: 0.958, green: 0.441, blue: 0.351))
                                        .cornerRadius(15)
-                                       .padding()
+                                       //.padding()
                                }
                 }
                 .navigationTitle(" Set a Schedule")

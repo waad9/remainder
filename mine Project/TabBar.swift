@@ -27,7 +27,7 @@ struct TabBar: View {
                 Text("Schedule")
             }.tag(1)
             
-            QuickTimer2().tabItem{Image(systemName: "timer")
+            LastQuickTimer().tabItem{Image(systemName: "timer")
                 Text("Qick Timer")
             }.tag(2)
             
