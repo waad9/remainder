@@ -21,7 +21,7 @@
 		C1789810290E605C00B62348 /* QickTimerSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C178980F290E605C00B62348 /* QickTimerSummary.swift */; };
 		C1789812290E61F400B62348 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1789811290E61F400B62348 /* TabBar.swift */; };
 		C192990A2911288C00A81D44 /* homep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19299092911288C00A81D44 /* homep.swift */; };
-		C1E2B45C2913ABFE004122DF /* LastQuickTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E2B45B2913ABFD004122DF /* LastQuickTimer.swift */; };
+		C1C01016291686C8006348BA /* LastQuickTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C01015291686C8006348BA /* LastQuickTimer.swift */; };
 		C1E2B45E2913AC4F004122DF /* ContentViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E2B45D2913AC4F004122DF /* ContentViewModal.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,7 @@
 		C178980F290E605C00B62348 /* QickTimerSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QickTimerSummary.swift; sourceTree = "<group>"; };
 		C1789811290E61F400B62348 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C19299092911288C00A81D44 /* homep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homep.swift; sourceTree = "<group>"; };
-		C1E2B45B2913ABFD004122DF /* LastQuickTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LastQuickTimer.swift; path = ../../LastQuickTimer.swift; sourceTree = "<group>"; };
+		C1C01015291686C8006348BA /* LastQuickTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastQuickTimer.swift; sourceTree = "<group>"; };
 		C1E2B45D2913AC4F004122DF /* ContentViewModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,8 +75,8 @@
 		C17897FE290E5E7D00B62348 /* mine Project */ = {
 			isa = PBXGroup;
 			children = (
+				C1C01015291686C8006348BA /* LastQuickTimer.swift */,
 				C1E2B45D2913AC4F004122DF /* ContentViewModal.swift */,
-				C1E2B45B2913ABFD004122DF /* LastQuickTimer.swift */,
 				C11853D129125240005A356C /* Settings.swift */,
 				4AAA82052910287F0076AE1E /* FirstPage.swift */,
 				9F17E4AA291113C7000C9D52 /* NotificationView.swift */,
@@ -175,12 +175,12 @@
 			files = (
 				C178980E290E5F3C00B62348 /* QuickTimer.swift in Sources */,
 				C192990A2911288C00A81D44 /* homep.swift in Sources */,
-				C1E2B45C2913ABFE004122DF /* LastQuickTimer.swift in Sources */,
 				C11853D229125240005A356C /* Settings.swift in Sources */,
 				4ACA6769290EFE210057F5AB /* ContentView.swift in Sources */,
 				9F17E4AD29111411000C9D52 /* NotificationManager.swift in Sources */,
 				C11281122910ECD5009D5311 /* SecondIView.swift in Sources */,
 				C1789810290E605C00B62348 /* QickTimerSummary.swift in Sources */,
+				C1C01016291686C8006348BA /* LastQuickTimer.swift in Sources */,
 				4AAA82062910287F0076AE1E /* FirstPage.swift in Sources */,
 				C1789800290E5E7D00B62348 /* mine_ProjectApp.swift in Sources */,
 				4A916CFF290F9C8400043230 /* smury.swift in Sources */,
