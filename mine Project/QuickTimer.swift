@@ -133,6 +133,7 @@ struct QuickTimer: View {
             
           
         }//v2
+            
         .navigationTitle("Quick Timer")
         .navigationBarTitleDisplayMode(.inline)
 //        .navigationBarItems(leading:Button{}label: {Image(systemName: "arrow.backward")

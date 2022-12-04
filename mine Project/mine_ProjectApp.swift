@@ -12,6 +12,9 @@ import SwiftUI
 struct mine_ProjectApp: App {
     
     @State var onBoarding = UserDefaults.standard.bool(forKey: "on")
+    //    
+
+    //
     var body: some Scene {
         WindowGroup {
             if onBoarding {
