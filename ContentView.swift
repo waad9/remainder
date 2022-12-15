@@ -95,6 +95,7 @@ struct ContentView: View {
                       
                         
                     }//.padding()
+                    
                     Text("Break type")
                         .padding(.trailing, 190.0)
                         .font(.title2)
